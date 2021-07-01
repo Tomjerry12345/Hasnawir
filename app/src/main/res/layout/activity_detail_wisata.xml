@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailWisataActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/trans_studio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_nama"
+        android:layout_width="300dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        tools:text="Trans Studio" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/mtv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_nama"
+        android:text="Lokasi :" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/mtv_nama"
+        app:layout_constraintStart_toEndOf="@+id/materialTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_nama"
+        tools:text="Jl. Metro Tj. Bunga, Maccini Sombala, Tamalate, Kota Makassar, Sulawesi Selatan." />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/label_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/mtv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_alamat"
+        android:text="Harga : " />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/label_harga"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_alamat"
+        tools:text="Harga : Rp.150.000" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/label_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mtv_harga"
+        android:text="Deskripsi : " />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mtv_deskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_deskripsi"
+        tools:text="Wisata ini cocok untuk Anda kunjungi bersama keluarga Anda terutama dengan anak Anda. Mengingat selain merupakan tempat bermain tempat ini juga menjadi sarana belajar bagi anak Anda. Bermain dan belajar tentunya sangat baik untuk perkembangan anak Anda. " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
